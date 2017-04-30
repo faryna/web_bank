@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4879E8DD-A21E-4B84-8AF9-F1B3380CD812}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ABEE4A09-90A0-464F-8A1A-7480B9AE4924}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebBank.WebUI", "src\WebBank.WebUI\WebBank.WebUI.xproj", "{D86799D3-FB7D-4072-B8BB-20811C534090}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Data-Access-Layer", "1-Data-Access-Layer", "{485B36CF-C8CF-4076-ADB2-23FE9262BBB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Business-Access-Layer", "2-Business-Access-Layer", "{C107787A-BB7A-4AD3-8245-41654F0E11D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Presentation-Access-Layer", "3-Presentation-Access-Layer", "{B24F3C6D-D597-4720-BEBD-040FD4ED8F5E}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebBank.Data", "WebBank.Data\WebBank.Data.xproj", "{EC7959A7-2283-470C-8B09-6C5F49236C70}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebBank.Business", "WebBank.Business\WebBank.Business.xproj", "{99F961CF-7085-4F58-AA80-5CC5285678F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D86799D3-FB7D-4072-B8BB-20811C534090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D86799D3-FB7D-4072-B8BB-20811C534090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D86799D3-FB7D-4072-B8BB-20811C534090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D86799D3-FB7D-4072-B8BB-20811C534090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC7959A7-2283-470C-8B09-6C5F49236C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC7959A7-2283-470C-8B09-6C5F49236C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC7959A7-2283-470C-8B09-6C5F49236C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC7959A7-2283-470C-8B09-6C5F49236C70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99F961CF-7085-4F58-AA80-5CC5285678F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F961CF-7085-4F58-AA80-5CC5285678F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F961CF-7085-4F58-AA80-5CC5285678F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F961CF-7085-4F58-AA80-5CC5285678F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D86799D3-FB7D-4072-B8BB-20811C534090} = {B24F3C6D-D597-4720-BEBD-040FD4ED8F5E}
+		{485B36CF-C8CF-4076-ADB2-23FE9262BBB9} = {4879E8DD-A21E-4B84-8AF9-F1B3380CD812}
+		{C107787A-BB7A-4AD3-8245-41654F0E11D6} = {4879E8DD-A21E-4B84-8AF9-F1B3380CD812}
+		{B24F3C6D-D597-4720-BEBD-040FD4ED8F5E} = {4879E8DD-A21E-4B84-8AF9-F1B3380CD812}
+		{EC7959A7-2283-470C-8B09-6C5F49236C70} = {485B36CF-C8CF-4076-ADB2-23FE9262BBB9}
+		{99F961CF-7085-4F58-AA80-5CC5285678F6} = {C107787A-BB7A-4AD3-8245-41654F0E11D6}
+	EndGlobalSection
+EndGlobal

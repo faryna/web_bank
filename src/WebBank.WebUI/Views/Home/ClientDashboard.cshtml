@@ -1,0 +1,51 @@
+﻿@model WebBank.WebUI.Models.ClientDashboardViewModel
+@using WebBank.WebUI.Resources
+@using WebBank.WebUI.Helpers
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="rating-block">
+                <h2>@Model.Client.UserAccount.Name @Model.Client.UserAccount.Surname</h2>
+                <h2>@Resource.Id @Model.Client.Id</h2>
+                <h4 class="bold padding-bottom-7">@Model.Client.Phone</h4>
+                <h4 class="bold padding-bottom-7">@Model.Client.UserAccount.Email</h4>
+                
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <h2>@Resource.CurrentBalance</h2>
+            <div class="pull-left">
+                <div class="pull-left" style="width:35px; line-height:1;">
+                    <h2 style="height:9px; margin:5px 0;">@Model.Client.CashAccount.Balance$</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-7">
+            <h2>@Resource.Transactions</h2>
+            <hr />
+            <div class="review-block">
+                @foreach (var i in Model.Transactions)
+                {
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="review-block-date">@Resource.TransferTransaction</div>
+                            <div class="review-block-date">@DateHelper.GetFullDate(i.Date)</div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="review-block-title">@Resource.Amount</div>
+                            <div class="review-block-description">@i.Amount$</div>
+                        </div>
+                    </div>
+                    <hr />
+                }
+                
+            </div>
+        </div>
+    </div>
+
+</div>

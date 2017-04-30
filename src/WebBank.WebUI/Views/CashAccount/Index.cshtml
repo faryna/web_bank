@@ -1,0 +1,29 @@
+﻿@model WebBank.WebUI.Models.TransferMoneyViewModel
+@using WebBank.WebUI.Resources
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form_main">
+                <h4 class="heading">@Resource.TransferMoney</h4>
+                <h2 id="result"></h2>
+                <div class="form">
+                    <form asp-controller="CashAccount" asp-action="Transfer" data-ajax="true" data-ajax-method="POST" class="form-horizontal" role="form" data-ajax-update="#result"> 
+                        <div style="margin-bottom: 25px" class="input-group">
+                            <input asp-for="Amount" class="form-control" placeholder="@Resource.Amount">
+                        </div>
+                        <div style="margin-bottom: 25px" class="input-group">
+                            <input asp-for="ReceiverId" class="form-control" placeholder="@Resource.ReceiverId">
+                        </div>
+                        <div style="margin-top:10px" class="form-group">
+                            <!-- Button -->
+                            <div class="col-sm-12 controls">
+                                <button type="submit" id="btn-ok" href="#" class="btn btn-success">OK</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
